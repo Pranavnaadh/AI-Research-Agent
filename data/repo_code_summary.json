@@ -1,0 +1,3561 @@
+{
+  "500-AI-Agents-Projects": {},
+  "AI-Scientist-v2": {
+    "launch_scientist_bfts.py": {
+      "functions": [
+        "print_time",
+        "save_token_tracker",
+        "parse_arguments",
+        "get_available_gpus",
+        "find_pdf_path_for_review",
+        "redirect_stdout_stderr_to_file"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\llm.py": {
+      "functions": [
+        "get_batch_responses_from_llm",
+        "make_llm_call",
+        "get_response_from_llm",
+        "extract_json_between_markers",
+        "create_client"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\perform_icbinb_writeup.py": {
+      "functions": [
+        "remove_accents_and_clean",
+        "compile_latex",
+        "is_header_or_footer",
+        "clean_lines",
+        "detect_references_position_clean",
+        "extract_page_line_counts",
+        "check_page_limit",
+        "get_reflection_page_info",
+        "get_citation_addition",
+        "load_idea_text",
+        "load_exp_summaries",
+        "filter_experiment_summaries",
+        "gather_citations",
+        "perform_writeup"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\perform_ideation_temp_free.py": {
+      "functions": [
+        "generate_temp_free_idea"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\perform_llm_review.py": {
+      "functions": [
+        "perform_review",
+        "load_paper",
+        "load_review",
+        "get_review_fewshot_examples",
+        "get_meta_review"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\perform_plotting.py": {
+      "functions": [
+        "build_aggregator_prompt",
+        "extract_code_snippet",
+        "run_aggregator_script",
+        "aggregate_plots",
+        "main"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\perform_vlm_review.py": {
+      "functions": [
+        "encode_image_to_base64",
+        "extract_figure_screenshots",
+        "extract_abstract",
+        "generate_vlm_img_cap_ref_review",
+        "generate_vlm_img_review",
+        "perform_imgs_cap_ref_review",
+        "detect_duplicate_figures",
+        "generate_vlm_img_selection_review",
+        "perform_imgs_cap_ref_review_selection",
+        "is_subfigure_caption"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\perform_writeup.py": {
+      "functions": [
+        "remove_accents_and_clean",
+        "compile_latex",
+        "detect_pages_before_impact",
+        "get_citation_addition",
+        "perform_writeup"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\vlm.py": {
+      "functions": [
+        "encode_image_to_base64",
+        "make_llm_call",
+        "make_vlm_call",
+        "prepare_vlm_prompt",
+        "get_response_from_vlm",
+        "create_client",
+        "extract_json_between_markers",
+        "get_batch_responses_from_vlm"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "ai_scientist\\ideas\\i_cant_believe_its_not_better.py": {
+      "functions": [
+        "calculate_accuracy",
+        "__init__",
+        "__len__",
+        "__getitem__"
+      ],
+      "classes": [
+        "HuggingFaceImageNet"
+      ]
+    },
+    "ai_scientist\\ideas\\i_cant_believe_its_not_betterrealworld.py": {
+      "functions": [
+        "calculate_accuracy",
+        "__init__",
+        "__len__",
+        "__getitem__"
+      ],
+      "classes": [
+        "HuggingFaceImageNet"
+      ]
+    },
+    "ai_scientist\\tools\\base_tool.py": {
+      "functions": [
+        "__init__",
+        "use_tool"
+      ],
+      "classes": [
+        "BaseTool"
+      ]
+    },
+    "ai_scientist\\tools\\semantic_scholar.py": {
+      "functions": [
+        "on_backoff",
+        "search_for_papers",
+        "__init__",
+        "use_tool",
+        "search_for_papers",
+        "format_papers"
+      ],
+      "classes": [
+        "SemanticScholarSearchTool"
+      ]
+    },
+    "ai_scientist\\tools\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\agent_manager.py": {
+      "functions": [
+        "__init__",
+        "_get_max_iterations",
+        "_get_task_desc_str",
+        "_create_initial_stage",
+        "_curate_task_desc",
+        "_save_checkpoint",
+        "_create_agent_for_stage",
+        "_parse_vlm_feedback",
+        "_check_substage_completion",
+        "_check_stage_completion",
+        "_get_best_implementation",
+        "_generate_substage_goal",
+        "_create_next_substage",
+        "_create_next_main_stage",
+        "run",
+        "_create_stage_analysis_prompt",
+        "parse_stage_names",
+        "_save_stage_summary",
+        "_get_response",
+        "_gather_stage_metrics",
+        "_identify_issues",
+        "_analyze_progress",
+        "_evaluate_stage_progression"
+      ],
+      "classes": [
+        "Stage",
+        "StageTransition",
+        "AgentManager"
+      ]
+    },
+    "ai_scientist\\treesearch\\bfts_utils.py": {
+      "functions": [
+        "idea_to_markdown",
+        "edit_bfts_config_file"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\interpreter.py": {
+      "functions": [
+        "exception_summary",
+        "__init__",
+        "write",
+        "flush",
+        "__init__",
+        "child_proc_setup",
+        "_run_session",
+        "create_process",
+        "_drain_queues",
+        "cleanup_session",
+        "run"
+      ],
+      "classes": [
+        "ExecutionResult",
+        "RedirectQueue",
+        "Interpreter"
+      ]
+    },
+    "ai_scientist\\treesearch\\journal.py": {
+      "functions": [
+        "__post_init__",
+        "__deepcopy__",
+        "__getstate__",
+        "__setstate__",
+        "stage_name",
+        "absorb_exec_result",
+        "absorb_plot_exec_result",
+        "term_out",
+        "is_leaf",
+        "__eq__",
+        "__hash__",
+        "debug_depth",
+        "to_dict",
+        "from_dict",
+        "append",
+        "generate_nb_trace",
+        "__getitem__",
+        "__len__",
+        "append",
+        "draft_nodes",
+        "buggy_nodes",
+        "good_nodes",
+        "get_node_by_id",
+        "get_metric_history",
+        "get_best_node",
+        "generate_summary",
+        "generate_summary_old",
+        "to_dict",
+        "save_experiment_notes"
+      ],
+      "classes": [
+        "Node",
+        "InteractiveSession",
+        "Journal"
+      ]
+    },
+    "ai_scientist\\treesearch\\journal2report.py": {
+      "functions": [
+        "journal2report"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\log_summarization.py": {
+      "functions": [
+        "get_nodes_infos",
+        "get_summarizer_prompt",
+        "get_stage_summary",
+        "get_node_log",
+        "update_summary",
+        "annotate_history",
+        "overall_summarize",
+        "process_stage",
+        "load_stage_folders",
+        "reconstruct_journal"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\parallel_agent.py": {
+      "functions": [
+        "_safe_pickle_test",
+        "_parse_keyword_prefix_response",
+        "get_gpu_count",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "_prompt_environment",
+        "_prompt_impl_guideline",
+        "_prompt_resp_fmt",
+        "_prompt_metricparse_resp_fmt",
+        "_prompt_debug_resp_fmt",
+        "_prompt_hyperparam_tuning_resp_fmt",
+        "_prompt_ablation_resp_fmt",
+        "_draft",
+        "_debug",
+        "_improve",
+        "_generate_seed_node",
+        "_generate_hyperparam_tuning_node",
+        "_generate_ablation_node",
+        "plan_and_code_query",
+        "parse_exec_result",
+        "_generate_plotting_code",
+        "_determine_datasets_successfully_tested",
+        "_analyze_plots_with_vlm",
+        "_generate_node_summary",
+        "__init__",
+        "acquire_gpu",
+        "release_gpu",
+        "__init__",
+        "_define_global_metrics",
+        "plan_and_code_query",
+        "_generate_seed_eval_aggregation_node",
+        "_run_multi_seed_evaluation",
+        "_run_plot_aggregation",
+        "_process_node_wrapper",
+        "_generate_hyperparam_tuning_idea",
+        "_generate_ablation_idea",
+        "_get_leaves",
+        "_select_parallel_nodes",
+        "step",
+        "_update_hyperparam_tuning_state",
+        "_update_ablation_state",
+        "_aggregate_seed_eval_results",
+        "__enter__",
+        "cleanup",
+        "__exit__",
+        "encode_image_to_base64"
+      ],
+      "classes": [
+        "AblationConfig",
+        "AblationIdea",
+        "HyperparamTuningIdea",
+        "MinimalAgent",
+        "GPUManager",
+        "ParallelAgent"
+      ]
+    },
+    "ai_scientist\\treesearch\\perform_experiments_bfts_with_agentmanager.py": {
+      "functions": [
+        "journal_to_rich_tree",
+        "perform_experiments_bfts",
+        "append_rec",
+        "cleanup",
+        "create_exec_callback",
+        "step_callback",
+        "generate_live",
+        "exec_callback"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\backend\\backend_anthropic.py": {
+      "functions": [
+        "get_ai_client",
+        "query"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\backend\\backend_openai.py": {
+      "functions": [
+        "get_ai_client",
+        "query"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\backend\\utils.py": {
+      "functions": [
+        "backoff_create",
+        "opt_messages_to_list",
+        "compile_prompt_to_md",
+        "__post_init__",
+        "as_openai_tool_dict",
+        "openai_tool_choice_dict"
+      ],
+      "classes": [
+        "FunctionSpec"
+      ]
+    },
+    "ai_scientist\\treesearch\\backend\\__init__.py": {
+      "functions": [
+        "get_ai_client",
+        "query"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\utils\\config.py": {
+      "functions": [
+        "_get_next_logindex",
+        "_load_cfg",
+        "load_cfg",
+        "prep_cfg",
+        "print_cfg",
+        "load_task_desc",
+        "prep_agent_workspace",
+        "save_run"
+      ],
+      "classes": [
+        "ThinkingConfig",
+        "StageConfig",
+        "SearchConfig",
+        "DebugConfig",
+        "AgentConfig",
+        "ExecConfig",
+        "ExperimentConfig",
+        "Config"
+      ]
+    },
+    "ai_scientist\\treesearch\\utils\\data_preview.py": {
+      "functions": [
+        "get_file_len_size",
+        "file_tree",
+        "_walk",
+        "preview_csv",
+        "preview_json",
+        "generate"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\utils\\metric.py": {
+      "functions": [
+        "__post_init__",
+        "__gt__",
+        "__eq__",
+        "__repr__",
+        "__str__",
+        "is_worst",
+        "value_npsafe",
+        "get_dataset_value",
+        "get_mean_value",
+        "__post_init__",
+        "__gt__",
+        "_should_maximize",
+        "__str__",
+        "__eq__",
+        "__repr__",
+        "value_npsafe",
+        "get_mean_value",
+        "__repr__",
+        "__str__"
+      ],
+      "classes": [
+        "MetricValue_old",
+        "MetricValue",
+        "WorstMetricValue"
+      ]
+    },
+    "ai_scientist\\treesearch\\utils\\response.py": {
+      "functions": [
+        "wrap_code",
+        "is_valid_python_script",
+        "extract_jsons",
+        "trim_long_string",
+        "extract_code",
+        "extract_text_up_to_code",
+        "format_code"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\utils\\serialize.py": {
+      "functions": [
+        "dumps_json",
+        "dump_json",
+        "loads_json",
+        "load_json",
+        "parse_markdown_to_dict"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\utils\\tree_export.py": {
+      "functions": [
+        "get_edges",
+        "generate_layout",
+        "normalize_layout",
+        "get_completed_stages",
+        "cfg_to_tree_struct",
+        "generate_html",
+        "generate",
+        "create_unified_viz"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\treesearch\\utils\\__init__.py": {
+      "functions": [
+        "copytree",
+        "clean_up_dataset",
+        "extract_archives",
+        "preproc_data"
+      ],
+      "classes": []
+    },
+    "ai_scientist\\utils\\token_tracker.py": {
+      "functions": [
+        "track_token_usage",
+        "__init__",
+        "add_tokens",
+        "add_interaction",
+        "get_interactions",
+        "reset",
+        "calculate_cost",
+        "get_summary",
+        "sync_wrapper"
+      ],
+      "classes": [
+        "TokenTracker"
+      ]
+    }
+  },
+  "annotated_deep_learning_paper_implementations": {
+    "setup.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\activations\\swish.py": {
+      "functions": [
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "Swish"
+      ]
+    },
+    "labml_nn\\activations\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\activations\\fta\\experiment.py": {
+      "functions": [
+        "_model",
+        "main",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "FeedForwardFTA",
+        "AutoregressiveTransformer",
+        "Configs"
+      ]
+    },
+    "labml_nn\\activations\\fta\\__init__.py": {
+      "functions": [
+        "_test",
+        "__init__",
+        "fuzzy_i_plus",
+        "forward"
+      ],
+      "classes": [
+        "FTA"
+      ]
+    },
+    "labml_nn\\adaptive_computation\\parity.py": {
+      "functions": [
+        "__init__",
+        "__len__",
+        "__getitem__"
+      ],
+      "classes": [
+        "ParityDataset"
+      ]
+    },
+    "labml_nn\\adaptive_computation\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\adaptive_computation\\ponder_net\\experiment.py": {
+      "functions": [
+        "main",
+        "init",
+        "step"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\adaptive_computation\\ponder_net\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "ParityPonderGRU",
+        "ReconstructionLoss",
+        "RegularizationLoss"
+      ]
+    },
+    "labml_nn\\capsule_networks\\mnist.py": {
+      "functions": [
+        "capsule_network_model",
+        "main",
+        "__init__",
+        "forward",
+        "init",
+        "step"
+      ],
+      "classes": [
+        "MNISTCapsuleNetworkModel",
+        "Configs"
+      ]
+    },
+    "labml_nn\\capsule_networks\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "Squash",
+        "Router",
+        "MarginLoss"
+      ]
+    },
+    "labml_nn\\cfr\\analytics.py": {
+      "functions": [
+        "calculate_percentages",
+        "plot_infosets"
+      ],
+      "classes": []
+    },
+    "labml_nn\\cfr\\infoset_saver.py": {
+      "functions": [
+        "__init__",
+        "save",
+        "load"
+      ],
+      "classes": [
+        "InfoSetSaver"
+      ]
+    },
+    "labml_nn\\cfr\\__init__.py": {
+      "functions": [
+        "simple_cfr",
+        "is_terminal",
+        "terminal_utility",
+        "player",
+        "is_chance",
+        "sample_chance",
+        "__add__",
+        "info_set_key",
+        "new_info_set",
+        "__repr__",
+        "__init__",
+        "actions",
+        "from_dict",
+        "to_dict",
+        "load_dict",
+        "calculate_strategy",
+        "get_average_strategy",
+        "__repr__",
+        "__init__",
+        "_get_info_set",
+        "walk_tree",
+        "iterate",
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "History",
+        "InfoSet",
+        "CFR",
+        "InfoSetTracker",
+        "CFRConfigs"
+      ]
+    },
+    "labml_nn\\cfr\\kuhn\\__init__.py": {
+      "functions": [
+        "create_new_history",
+        "_cnh",
+        "main",
+        "from_dict",
+        "actions",
+        "__repr__",
+        "__init__",
+        "is_terminal",
+        "_terminal_utility_p1",
+        "terminal_utility",
+        "is_chance",
+        "__add__",
+        "player",
+        "sample_chance",
+        "__repr__",
+        "info_set_key",
+        "new_info_set"
+      ],
+      "classes": [
+        "InfoSet",
+        "History",
+        "Configs"
+      ]
+    },
+    "labml_nn\\conv_mixer\\experiment.py": {
+      "functions": [
+        "_conv_mixer",
+        "main"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\conv_mixer\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "ConvMixerLayer",
+        "PatchEmbeddings",
+        "ClassificationHead",
+        "ConvMixer"
+      ]
+    },
+    "labml_nn\\diffusion\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\diffusion\\ddpm\\evaluate.py": {
+      "functions": [
+        "main",
+        "__init__",
+        "show_image",
+        "make_video",
+        "sample_animation",
+        "interpolate",
+        "interpolate_animate",
+        "_sample_x0",
+        "sample",
+        "p_sample",
+        "p_x0"
+      ],
+      "classes": [
+        "Sampler"
+      ]
+    },
+    "labml_nn\\diffusion\\ddpm\\experiment.py": {
+      "functions": [
+        "celeb_dataset",
+        "mnist_dataset",
+        "main",
+        "init",
+        "sample",
+        "train",
+        "run",
+        "__init__",
+        "__len__",
+        "__getitem__",
+        "__init__",
+        "__getitem__"
+      ],
+      "classes": [
+        "Configs",
+        "CelebADataset",
+        "MNISTDataset"
+      ]
+    },
+    "labml_nn\\diffusion\\ddpm\\unet.py": {
+      "functions": [
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "Swish",
+        "TimeEmbedding",
+        "ResidualBlock",
+        "AttentionBlock",
+        "DownBlock",
+        "UpBlock",
+        "MiddleBlock",
+        "Upsample",
+        "Downsample",
+        "UNet"
+      ]
+    },
+    "labml_nn\\diffusion\\ddpm\\utils.py": {
+      "functions": [
+        "gather"
+      ],
+      "classes": []
+    },
+    "labml_nn\\diffusion\\ddpm\\__init__.py": {
+      "functions": [
+        "__init__",
+        "q_xt_x0",
+        "q_sample",
+        "p_sample",
+        "loss"
+      ],
+      "classes": [
+        "DenoiseDiffusion"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\latent_diffusion.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "device",
+        "get_text_conditioning",
+        "autoencoder_encode",
+        "autoencoder_decode",
+        "forward"
+      ],
+      "classes": [
+        "DiffusionWrapper",
+        "LatentDiffusion"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\util.py": {
+      "functions": [
+        "set_seed",
+        "load_model",
+        "load_img",
+        "save_images"
+      ],
+      "classes": []
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\model\\autoencoder.py": {
+      "functions": [
+        "swish",
+        "normalization",
+        "__init__",
+        "encode",
+        "decode",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "sample",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "Autoencoder",
+        "Encoder",
+        "Decoder",
+        "GaussianDistribution",
+        "AttnBlock",
+        "UpSample",
+        "DownSample",
+        "ResnetBlock"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\model\\clip_embedder.py": {
+      "functions": [
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "CLIPTextEmbedder"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\model\\unet.py": {
+      "functions": [
+        "normalization",
+        "_test_time_embeddings",
+        "__init__",
+        "time_step_embedding",
+        "forward",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "forward"
+      ],
+      "classes": [
+        "UNetModel",
+        "TimestepEmbedSequential",
+        "UpSample",
+        "DownSample",
+        "ResBlock",
+        "GroupNorm32"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\model\\unet_attention.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "flash_attention",
+        "normal_attention",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "SpatialTransformer",
+        "BasicTransformerBlock",
+        "CrossAttention",
+        "FeedForward",
+        "GeGLU"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\model\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\sampler\\ddim.py": {
+      "functions": [
+        "__init__",
+        "sample",
+        "p_sample",
+        "get_x_prev_and_pred_x0",
+        "q_sample",
+        "paint"
+      ],
+      "classes": [
+        "DDIMSampler"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\sampler\\ddpm.py": {
+      "functions": [
+        "__init__",
+        "sample",
+        "p_sample",
+        "q_sample"
+      ],
+      "classes": [
+        "DDPMSampler"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\sampler\\__init__.py": {
+      "functions": [
+        "__init__",
+        "get_eps",
+        "sample",
+        "paint",
+        "q_sample"
+      ],
+      "classes": [
+        "DiffusionSampler"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\scripts\\image_to_image.py": {
+      "functions": [
+        "main",
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "Img2Img"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\scripts\\in_paint.py": {
+      "functions": [
+        "main",
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "InPaint"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\scripts\\text_to_image.py": {
+      "functions": [
+        "main",
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "Txt2Img"
+      ]
+    },
+    "labml_nn\\diffusion\\stable_diffusion\\scripts\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\distillation\\large.py": {
+      "functions": [
+        "_large_model",
+        "main",
+        "conv_block",
+        "__init__"
+      ],
+      "classes": [
+        "Configs",
+        "LargeModel"
+      ]
+    },
+    "labml_nn\\distillation\\small.py": {
+      "functions": [
+        "_small_model",
+        "main",
+        "conv_block",
+        "__init__"
+      ],
+      "classes": [
+        "Configs",
+        "SmallModel"
+      ]
+    },
+    "labml_nn\\distillation\\__init__.py": {
+      "functions": [
+        "_large_model",
+        "_small_student_model",
+        "get_saved_model",
+        "main",
+        "step"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\experiments\\arithmetic_dataset.py": {
+      "functions": [
+        "arithmetic_train_loader",
+        "_test",
+        "__init__",
+        "make_int",
+        "get_add_explanation",
+        "make_add_problem",
+        "get_qa",
+        "get_packed_math_input",
+        "encode",
+        "decode",
+        "__getitem__",
+        "__len__",
+        "sample"
+      ],
+      "classes": [
+        "ArithmeticDataset",
+        "ArithmeticAutoregression"
+      ]
+    },
+    "labml_nn\\experiments\\cifar10.py": {
+      "functions": [
+        "cifar10_train_augmented",
+        "cifar10_valid_no_augment",
+        "conv_block",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "CIFAR10Configs",
+        "CIFAR10VGGModel"
+      ]
+    },
+    "labml_nn\\experiments\\mnist.py": {
+      "functions": [
+        "_optimizer",
+        "init",
+        "step"
+      ],
+      "classes": [
+        "MNISTConfigs"
+      ]
+    },
+    "labml_nn\\experiments\\nlp_autoregression.py": {
+      "functions": [
+        "_optimizer",
+        "_n_tokens",
+        "basic_english",
+        "character_tokenizer",
+        "character",
+        "tiny_shakespeare",
+        "sequential_train_loader",
+        "sequential_valid_loader",
+        "transpose_batch",
+        "shuffled_train_loader",
+        "shuffled_valid_loader",
+        "__init__",
+        "forward",
+        "init",
+        "other_metrics",
+        "step",
+        "sample"
+      ],
+      "classes": [
+        "CrossEntropyLoss",
+        "NLPAutoRegressionConfigs"
+      ]
+    },
+    "labml_nn\\experiments\\nlp_classification.py": {
+      "functions": [
+        "_optimizer",
+        "basic_english",
+        "character_tokenizer",
+        "character",
+        "_n_tokens",
+        "ag_news",
+        "init",
+        "step",
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "NLPClassificationConfigs",
+        "CollateFunc"
+      ]
+    },
+    "labml_nn\\experiments\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\gan\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\gan\\cycle_gan\\__init__.py": {
+      "functions": [
+        "weights_init_normal",
+        "load_image",
+        "train",
+        "plot_image",
+        "evaluate",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "download",
+        "__init__",
+        "__getitem__",
+        "__len__",
+        "__init__",
+        "push_and_pop",
+        "sample_images",
+        "initialize",
+        "run",
+        "optimize_generators",
+        "optimize_discriminator"
+      ],
+      "classes": [
+        "GeneratorResNet",
+        "ResidualBlock",
+        "Discriminator",
+        "DiscriminatorBlock",
+        "ImageDataset",
+        "ReplayBuffer",
+        "Configs"
+      ]
+    },
+    "labml_nn\\gan\\dcgan\\__init__.py": {
+      "functions": [
+        "_weights_init",
+        "main",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "Generator",
+        "Discriminator"
+      ]
+    },
+    "labml_nn\\gan\\original\\experiment.py": {
+      "functions": [
+        "weights_init",
+        "mnist_gan_transforms",
+        "_discriminator_optimizer",
+        "_generator_optimizer",
+        "main",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "init",
+        "sample_z",
+        "step",
+        "calc_discriminator_loss",
+        "calc_generator_loss"
+      ],
+      "classes": [
+        "Generator",
+        "Discriminator",
+        "Configs"
+      ]
+    },
+    "labml_nn\\gan\\original\\__init__.py": {
+      "functions": [
+        "_create_labels",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "DiscriminatorLogitsLoss",
+        "GeneratorLogitsLoss"
+      ]
+    },
+    "labml_nn\\gan\\stylegan\\experiment.py": {
+      "functions": [
+        "main",
+        "__init__",
+        "__len__",
+        "__getitem__",
+        "init",
+        "get_w",
+        "get_noise",
+        "generate_images",
+        "step",
+        "train"
+      ],
+      "classes": [
+        "Dataset",
+        "Configs"
+      ]
+    },
+    "labml_nn\\gan\\stylegan\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "MappingNetwork",
+        "Generator",
+        "GeneratorBlock",
+        "StyleBlock",
+        "ToRGB",
+        "Conv2dWeightModulate",
+        "Discriminator",
+        "DiscriminatorBlock",
+        "MiniBatchStdDev",
+        "DownSample",
+        "UpSample",
+        "Smooth",
+        "EqualizedLinear",
+        "EqualizedConv2d",
+        "EqualizedWeight",
+        "GradientPenalty",
+        "PathLengthPenalty"
+      ]
+    },
+    "labml_nn\\gan\\wasserstein\\experiment.py": {
+      "functions": [
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\gan\\wasserstein\\__init__.py": {
+      "functions": [
+        "forward",
+        "forward"
+      ],
+      "classes": [
+        "DiscriminatorLoss",
+        "GeneratorLoss"
+      ]
+    },
+    "labml_nn\\gan\\wasserstein\\gradient_penalty\\experiment.py": {
+      "functions": [
+        "main",
+        "calc_discriminator_loss"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\gan\\wasserstein\\gradient_penalty\\__init__.py": {
+      "functions": [
+        "forward"
+      ],
+      "classes": [
+        "GradientPenalty"
+      ]
+    },
+    "labml_nn\\graphs\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\graphs\\gat\\experiment.py": {
+      "functions": [
+        "accuracy",
+        "cora_dataset",
+        "gat_model",
+        "_optimizer",
+        "main",
+        "_download",
+        "__init__",
+        "__init__",
+        "forward",
+        "run"
+      ],
+      "classes": [
+        "CoraDataset",
+        "GAT",
+        "Configs"
+      ]
+    },
+    "labml_nn\\graphs\\gat\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "GraphAttentionLayer"
+      ]
+    },
+    "labml_nn\\graphs\\gatv2\\experiment.py": {
+      "functions": [
+        "gat_v2_model",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "GATv2",
+        "Configs"
+      ]
+    },
+    "labml_nn\\graphs\\gatv2\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "GraphAttentionV2Layer"
+      ]
+    },
+    "labml_nn\\helpers\\datasets.py": {
+      "functions": [
+        "_mnist_dataset",
+        "mnist_transforms",
+        "mnist_train_dataset",
+        "mnist_valid_dataset",
+        "mnist_train_loader",
+        "mnist_valid_loader",
+        "_cifar_dataset",
+        "cifar10_transforms",
+        "cifar10_train_dataset",
+        "cifar10_valid_dataset",
+        "cifar10_train_loader",
+        "cifar10_valid_loader",
+        "_test_tiny_shakespeare",
+        "load",
+        "__init__",
+        "text_to_i",
+        "__repr__",
+        "__init__",
+        "__len__",
+        "__iter__",
+        "__next__",
+        "__getitem__",
+        "__init__",
+        "__len__",
+        "__getitem__",
+        "__init__"
+      ],
+      "classes": [
+        "MNISTConfigs",
+        "CIFAR10Configs",
+        "TextDataset",
+        "SequentialDataLoader",
+        "SequentialUnBatchedDataset",
+        "TextFileDataset"
+      ]
+    },
+    "labml_nn\\helpers\\device.py": {
+      "functions": [
+        "_device",
+        "_device_info",
+        "__init__",
+        "__str__",
+        "__init__"
+      ],
+      "classes": [
+        "DeviceInfo",
+        "DeviceConfigs"
+      ]
+    },
+    "labml_nn\\helpers\\metrics.py": {
+      "functions": [
+        "__init__",
+        "create_state",
+        "set_state",
+        "on_epoch_start",
+        "on_epoch_end",
+        "track",
+        "reset",
+        "__init__",
+        "__call__",
+        "create_state",
+        "set_state",
+        "on_epoch_start",
+        "on_epoch_end",
+        "track",
+        "__call__"
+      ],
+      "classes": [
+        "StateModule",
+        "Metric",
+        "AccuracyState",
+        "Accuracy",
+        "AccuracyDirect"
+      ]
+    },
+    "labml_nn\\helpers\\optimizer.py": {
+      "functions": [
+        "sgd_optimizer",
+        "adam_optimizer",
+        "noam_optimizer",
+        "_test_noam_optimizer",
+        "__init__",
+        "__init__",
+        "step",
+        "rate",
+        "zero_grad"
+      ],
+      "classes": [
+        "OptimizerConfigs",
+        "NoamOpt"
+      ]
+    },
+    "labml_nn\\helpers\\schedule.py": {
+      "functions": [
+        "__call__",
+        "__init__",
+        "__call__",
+        "__str__",
+        "__init__",
+        "__call__",
+        "update",
+        "__str__",
+        "__init__",
+        "__call__",
+        "__str__",
+        "__init__"
+      ],
+      "classes": [
+        "Schedule",
+        "Flat",
+        "Dynamic",
+        "Piecewise",
+        "RelativePiecewise"
+      ]
+    },
+    "labml_nn\\helpers\\trainer.py": {
+      "functions": [
+        "_loop_configs",
+        "_default_trainer",
+        "_default_validator",
+        "_data_loop_count",
+        "_default_optimizer",
+        "__init__",
+        "__iter__",
+        "__next__",
+        "__len__",
+        "__contains__",
+        "__init__",
+        "__iter__",
+        "idx",
+        "__finish",
+        "__next__",
+        "__handler",
+        "__str__",
+        "__init__",
+        "_enter",
+        "_exit",
+        "update",
+        "__init__",
+        "__enter__",
+        "__exit__",
+        "__init__",
+        "set_data_loader",
+        "__call__",
+        "__iterate",
+        "__init__",
+        "is_interval",
+        "is_last",
+        "completed",
+        "iteration_completed",
+        "epoch_progress",
+        "step",
+        "step_inner",
+        "reset",
+        "init",
+        "step",
+        "run_step",
+        "run",
+        "sample",
+        "init",
+        "step"
+      ],
+      "classes": [
+        "TrainingLoopIterator",
+        "TrainingLoop",
+        "TrainingLoopConfigs",
+        "ModeState",
+        "Mode",
+        "Trainer",
+        "BatchIndex",
+        "TrainValidConfigs",
+        "SimpleTrainValidConfigs"
+      ]
+    },
+    "labml_nn\\helpers\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\hypernetworks\\experiment.py": {
+      "functions": [
+        "autoregressive_model",
+        "hyper_lstm",
+        "lstm",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "AutoregressiveModel",
+        "Configs"
+      ]
+    },
+    "labml_nn\\hypernetworks\\hyper_lstm.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "HyperLSTMCell",
+        "HyperLSTM"
+      ]
+    },
+    "labml_nn\\hypernetworks\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\lora\\experiment.py": {
+      "functions": [
+        "tiny_shakespeare",
+        "_load_pretrained_weights",
+        "initialize",
+        "run"
+      ],
+      "classes": [
+        "Trainer"
+      ]
+    },
+    "labml_nn\\lora\\gpt2.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "_split_heads",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "FFN",
+        "MultiHeadAttention",
+        "Block",
+        "GPTModel"
+      ]
+    },
+    "labml_nn\\lora\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "Linear",
+        "Embedding"
+      ]
+    },
+    "labml_nn\\lstm\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "LSTMCell",
+        "LSTM"
+      ]
+    },
+    "labml_nn\\neox\\checkpoint.py": {
+      "functions": [
+        "get_checkpoints_download_path",
+        "get_files_to_download",
+        "download",
+        "load_checkpoint_files",
+        "merge_params_dim_0",
+        "merge_params_dim_1",
+        "merge_params_duplicate",
+        "merge_params_sum"
+      ],
+      "classes": []
+    },
+    "labml_nn\\neox\\model.py": {
+      "functions": [
+        "load_state",
+        "__init__",
+        "forward",
+        "load_state",
+        "__init__",
+        "rotate_half",
+        "forward",
+        "__init__",
+        "_get_mask",
+        "forward",
+        "compute_flash_attention",
+        "compute_attention",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "load_state",
+        "__init__",
+        "forward",
+        "load_state",
+        "__init__",
+        "forward",
+        "load_state",
+        "__init__",
+        "_prepare_layer",
+        "post_load_prepare",
+        "_create_and_cache_layer",
+        "_create_transformer_layer",
+        "_create_embedding_layer",
+        "_create_final_norm_layer",
+        "_create_readout_layer",
+        "get_layers",
+        "total_layers",
+        "load"
+      ],
+      "classes": [
+        "NeoXModule",
+        "Embedding",
+        "RoPE",
+        "AttentionLayer",
+        "FFNLayer",
+        "TransformerLayer",
+        "FinalNorm",
+        "ReadoutLayer",
+        "LayerGenerator"
+      ]
+    },
+    "labml_nn\\neox\\tokenizer.py": {
+      "functions": [
+        "get_tokenizer"
+      ],
+      "classes": []
+    },
+    "labml_nn\\neox\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\neox\\evaluation\\half_precision.py": {
+      "functions": [
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\neox\\evaluation\\llm_int8.py": {
+      "functions": [
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\neox\\evaluation\\__init__.py": {
+      "functions": [
+        "run_eval_harness",
+        "__init__",
+        "device",
+        "vocab_size",
+        "eot_token_id",
+        "max_length",
+        "max_gen_toks",
+        "batch_size",
+        "tok_encode",
+        "tok_decode",
+        "_model_call",
+        "_model_generate",
+        "greedy_until",
+        "_loglikelihood_tokens",
+        "run_eval",
+        "__init__",
+        "_model_call",
+        "_collate"
+      ],
+      "classes": [
+        "EvalHarnessAdapter",
+        "NoeXEvalHarnessAdapter"
+      ]
+    },
+    "labml_nn\\neox\\samples\\finetune.py": {
+      "functions": [
+        "neox_layers",
+        "fine_tune_biases",
+        "pipe_model",
+        "tiny_shakespeare",
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\neox\\samples\\generate.py": {
+      "functions": [
+        "infer",
+        "generate"
+      ],
+      "classes": []
+    },
+    "labml_nn\\neox\\samples\\llm_int8.py": {
+      "functions": [
+        "generate"
+      ],
+      "classes": []
+    },
+    "labml_nn\\neox\\samples\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\neox\\utils\\cache.py": {
+      "functions": [
+        "get_cache",
+        "__init__",
+        "clear_all",
+        "push",
+        "q_size",
+        "pop",
+        "set",
+        "get",
+        "clear"
+      ],
+      "classes": [
+        "Cache"
+      ]
+    },
+    "labml_nn\\neox\\utils\\finetune.py": {
+      "functions": [
+        "__init__",
+        "get_trainable_params",
+        "get_layer_trainable_params",
+        "set_trainable_params",
+        "state_dict",
+        "load_state_dict",
+        "get_layer_trainable_params"
+      ],
+      "classes": [
+        "FineTuner",
+        "FineTuneBiases"
+      ]
+    },
+    "labml_nn\\neox\\utils\\llm_int8.py": {
+      "functions": [
+        "make_llm_int8_linear"
+      ],
+      "classes": []
+    },
+    "labml_nn\\neox\\utils\\text_dataset.py": {
+      "functions": [
+        "load_text",
+        "get_training_data",
+        "_test",
+        "__init__",
+        "__len__",
+        "__getitem__"
+      ],
+      "classes": [
+        "NeoXDataset"
+      ]
+    },
+    "labml_nn\\neox\\utils\\trainer.py": {
+      "functions": [
+        "get_trainable_params",
+        "adam_optimizer",
+        "sgd_optimizer",
+        "grad_scaler",
+        "get_loss",
+        "train",
+        "sample",
+        "save_checkpoint",
+        "get_iterators",
+        "train_epoch"
+      ],
+      "classes": [
+        "TrainerConf",
+        "PipelineParallelTrainerConf"
+      ]
+    },
+    "labml_nn\\neox\\utils\\__init__.py": {
+      "functions": [
+        "get_tokens",
+        "print_token_outputs",
+        "print_tokens",
+        "balance_layers_simple"
+      ],
+      "classes": []
+    },
+    "labml_nn\\normalization\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\normalization\\batch_channel_norm\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "BatchChannelNorm",
+        "EstimatedBatchNorm",
+        "ChannelNorm"
+      ]
+    },
+    "labml_nn\\normalization\\batch_norm\\cifar10.py": {
+      "functions": [
+        "model",
+        "main",
+        "conv_block",
+        "__init__"
+      ],
+      "classes": [
+        "Model"
+      ]
+    },
+    "labml_nn\\normalization\\batch_norm\\mnist.py": {
+      "functions": [
+        "model",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "Model"
+      ]
+    },
+    "labml_nn\\normalization\\batch_norm\\__init__.py": {
+      "functions": [
+        "_test",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "BatchNorm"
+      ]
+    },
+    "labml_nn\\normalization\\deep_norm\\experiment.py": {
+      "functions": [
+        "_deep_norm_alpha",
+        "_deep_norm_beta",
+        "_model",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "AutoregressiveTransformer",
+        "Configs"
+      ]
+    },
+    "labml_nn\\normalization\\deep_norm\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "DeepNorm",
+        "DeepNormTransformerLayer"
+      ]
+    },
+    "labml_nn\\normalization\\group_norm\\experiment.py": {
+      "functions": [
+        "model",
+        "main",
+        "conv_block",
+        "__init__"
+      ],
+      "classes": [
+        "Model",
+        "Configs"
+      ]
+    },
+    "labml_nn\\normalization\\group_norm\\__init__.py": {
+      "functions": [
+        "_test",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "GroupNorm"
+      ]
+    },
+    "labml_nn\\normalization\\instance_norm\\experiment.py": {
+      "functions": [
+        "_model",
+        "main",
+        "conv_block",
+        "__init__"
+      ],
+      "classes": [
+        "Model"
+      ]
+    },
+    "labml_nn\\normalization\\instance_norm\\__init__.py": {
+      "functions": [
+        "_test",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "InstanceNorm"
+      ]
+    },
+    "labml_nn\\normalization\\layer_norm\\__init__.py": {
+      "functions": [
+        "_test",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "LayerNorm"
+      ]
+    },
+    "labml_nn\\normalization\\weight_standardization\\conv2d.py": {
+      "functions": [
+        "_test",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "Conv2d"
+      ]
+    },
+    "labml_nn\\normalization\\weight_standardization\\experiment.py": {
+      "functions": [
+        "_model",
+        "main",
+        "conv_block",
+        "__init__"
+      ],
+      "classes": [
+        "Model"
+      ]
+    },
+    "labml_nn\\normalization\\weight_standardization\\__init__.py": {
+      "functions": [
+        "weight_standardization"
+      ],
+      "classes": []
+    },
+    "labml_nn\\optimizers\\adam.py": {
+      "functions": [
+        "__init__",
+        "init_state",
+        "get_mv",
+        "get_lr",
+        "adam_update",
+        "step_param"
+      ],
+      "classes": [
+        "Adam"
+      ]
+    },
+    "labml_nn\\optimizers\\adam_fp16.py": {
+      "functions": [
+        "__init__",
+        "init_state",
+        "step_param",
+        "_unscale_grads_"
+      ],
+      "classes": [
+        "AdamFP16",
+        "GradScalerFP16"
+      ]
+    },
+    "labml_nn\\optimizers\\adam_warmup.py": {
+      "functions": [
+        "__init__",
+        "get_lr"
+      ],
+      "classes": [
+        "AdamWarmup"
+      ]
+    },
+    "labml_nn\\optimizers\\adam_warmup_cosine_decay.py": {
+      "functions": [
+        "_test_lr",
+        "__init__",
+        "get_lr"
+      ],
+      "classes": [
+        "AdamWarmupCosineDecay"
+      ]
+    },
+    "labml_nn\\optimizers\\ada_belief.py": {
+      "functions": [
+        "__init__",
+        "init_state",
+        "get_ms",
+        "step_param"
+      ],
+      "classes": [
+        "AdaBelief"
+      ]
+    },
+    "labml_nn\\optimizers\\amsgrad.py": {
+      "functions": [
+        "_synthetic_experiment",
+        "__init__",
+        "init_state",
+        "get_mv",
+        "func"
+      ],
+      "classes": [
+        "AMSGrad"
+      ]
+    },
+    "labml_nn\\optimizers\\configs.py": {
+      "functions": [
+        "_weight_decay",
+        "_sgd_optimizer",
+        "_adam_optimizer",
+        "_adam_warmup_optimizer",
+        "_radam_optimizer",
+        "_ada_belief_optimizer",
+        "_noam_optimizer",
+        "_sophia_optimizer",
+        "_noam_optimizer",
+        "__init__"
+      ],
+      "classes": [
+        "OptimizerConfigs"
+      ]
+    },
+    "labml_nn\\optimizers\\mnist_experiment.py": {
+      "functions": [
+        "model",
+        "_optimizer",
+        "main",
+        "__init__",
+        "forward",
+        "init",
+        "step"
+      ],
+      "classes": [
+        "Model",
+        "Configs"
+      ]
+    },
+    "labml_nn\\optimizers\\noam.py": {
+      "functions": [
+        "_test_noam_lr",
+        "__init__",
+        "get_lr"
+      ],
+      "classes": [
+        "Noam"
+      ]
+    },
+    "labml_nn\\optimizers\\performance_test.py": {
+      "functions": [
+        "test"
+      ],
+      "classes": []
+    },
+    "labml_nn\\optimizers\\radam.py": {
+      "functions": [
+        "_test_rectification_term",
+        "__init__",
+        "step_param",
+        "calc_rectification_term",
+        "r_adam_update"
+      ],
+      "classes": [
+        "RAdam"
+      ]
+    },
+    "labml_nn\\optimizers\\sophia.py": {
+      "functions": [
+        "__init__",
+        "init_state",
+        "update_hessian",
+        "step_param"
+      ],
+      "classes": [
+        "Sophia"
+      ]
+    },
+    "labml_nn\\optimizers\\__init__.py": {
+      "functions": [
+        "__init__",
+        "init_state",
+        "step_param",
+        "step",
+        "__init__",
+        "defaults",
+        "__call__"
+      ],
+      "classes": [
+        "GenericAdaptiveOptimizer",
+        "WeightDecay"
+      ]
+    },
+    "labml_nn\\recurrent_highway_networks\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "RHNCell",
+        "RHN"
+      ]
+    },
+    "labml_nn\\resnet\\experiment.py": {
+      "functions": [
+        "_resnet",
+        "main"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\resnet\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "ShortcutProjection",
+        "ResidualBlock",
+        "BottleneckResidualBlock",
+        "ResNetBase"
+      ]
+    },
+    "labml_nn\\rl\\game.py": {
+      "functions": [
+        "worker_process",
+        "__init__",
+        "step",
+        "reset",
+        "_process_obs",
+        "__init__"
+      ],
+      "classes": [
+        "Game",
+        "Worker"
+      ]
+    },
+    "labml_nn\\rl\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\rl\\dqn\\experiment.py": {
+      "functions": [
+        "obs_to_torch",
+        "main",
+        "__init__",
+        "_sample_action",
+        "sample",
+        "train",
+        "run_training_loop",
+        "destroy"
+      ],
+      "classes": [
+        "Trainer"
+      ]
+    },
+    "labml_nn\\rl\\dqn\\model.py": {
+      "functions": [
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "Model"
+      ]
+    },
+    "labml_nn\\rl\\dqn\\replay_buffer.py": {
+      "functions": [
+        "__init__",
+        "add",
+        "_set_priority_min",
+        "_set_priority_sum",
+        "_sum",
+        "_min",
+        "find_prefix_sum_idx",
+        "sample",
+        "update_priorities",
+        "is_full"
+      ],
+      "classes": [
+        "ReplayBuffer"
+      ]
+    },
+    "labml_nn\\rl\\dqn\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "QFuncLoss"
+      ]
+    },
+    "labml_nn\\rl\\ppo\\experiment.py": {
+      "functions": [
+        "obs_to_torch",
+        "main",
+        "__init__",
+        "forward",
+        "__init__",
+        "sample",
+        "train",
+        "_normalize",
+        "_calc_loss",
+        "run_training_loop",
+        "destroy"
+      ],
+      "classes": [
+        "Model",
+        "Trainer"
+      ]
+    },
+    "labml_nn\\rl\\ppo\\gae.py": {
+      "functions": [
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "GAE"
+      ]
+    },
+    "labml_nn\\rl\\ppo\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "forward"
+      ],
+      "classes": [
+        "ClippedPPOLoss",
+        "ClippedValueFunctionLoss"
+      ]
+    },
+    "labml_nn\\rwkv\\configs.py": {
+      "functions": [],
+      "classes": [
+        "RWKVConfigs"
+      ]
+    },
+    "labml_nn\\rwkv\\experiment.py": {
+      "functions": [
+        "_rwkv_configs",
+        "_init_weights",
+        "_model",
+        "_configure_optimizers",
+        "main"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\rwkv\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "forward",
+        "backward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "LayerNorm",
+        "L2Wrap",
+        "ChannelMixing",
+        "TimeMixing",
+        "Block",
+        "RWKV"
+      ]
+    },
+    "labml_nn\\sampling\\experiment.py": {
+      "functions": [
+        "sample",
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\sampling\\experiment_tiny.py": {
+      "functions": [
+        "get_model_dataset",
+        "sample",
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\sampling\\greedy.py": {
+      "functions": [
+        "__call__"
+      ],
+      "classes": [
+        "GreedySampler"
+      ]
+    },
+    "labml_nn\\sampling\\nucleus.py": {
+      "functions": [
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "NucleusSampler"
+      ]
+    },
+    "labml_nn\\sampling\\temperature.py": {
+      "functions": [
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "TemperatureSampler"
+      ]
+    },
+    "labml_nn\\sampling\\top_k.py": {
+      "functions": [
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "TopKSampler"
+      ]
+    },
+    "labml_nn\\sampling\\__init__.py": {
+      "functions": [
+        "__call__"
+      ],
+      "classes": [
+        "Sampler"
+      ]
+    },
+    "labml_nn\\scaling\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\scaling\\zero3\\finetune_neox.py": {
+      "functions": [
+        "_optimizer",
+        "_model",
+        "main"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\scaling\\zero3\\__init__.py": {
+      "functions": [
+        "__init__",
+        "_merge_and_pad_params",
+        "get_trainable_chunk",
+        "_empty",
+        "_cleanup_params",
+        "fetch_params",
+        "forward",
+        "_add_backward_hooks",
+        "_backward_event",
+        "_post_backward_hook",
+        "_backward_hook",
+        "_backup_grads",
+        "__init__",
+        "get_trainable_chunk",
+        "forward"
+      ],
+      "classes": [
+        "Zero3Layer",
+        "Zero3Sequential"
+      ]
+    },
+    "labml_nn\\sketch_rnn\\__init__.py": {
+      "functions": [
+        "main",
+        "__init__",
+        "__len__",
+        "__getitem__",
+        "__init__",
+        "n_distributions",
+        "set_temperature",
+        "get_distribution",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "forward",
+        "forward",
+        "__init__",
+        "sample",
+        "_sample_step",
+        "plot",
+        "init",
+        "step",
+        "sample"
+      ],
+      "classes": [
+        "StrokesDataset",
+        "BivariateGaussianMixture",
+        "EncoderRNN",
+        "DecoderRNN",
+        "ReconstructionLoss",
+        "KLDivLoss",
+        "Sampler",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\configs.py": {
+      "functions": [
+        "_ffn_activation_relu",
+        "_ffn_activation_gelu",
+        "_feed_forward",
+        "_mha",
+        "_relative_mha",
+        "_feed_forward",
+        "_encoder_layer",
+        "_decoder_layer",
+        "_encoder",
+        "_decoder",
+        "_generator",
+        "_src_embed_with_positional",
+        "_tgt_embed_with_positional",
+        "_src_embed_with_learned_positional",
+        "_tgt_embed_with_learned_positional",
+        "_src_embed_without_positional",
+        "_tgt_embed_without_positional",
+        "_encoder_decoder"
+      ],
+      "classes": [
+        "FeedForwardConfigs",
+        "TransformerConfigs"
+      ]
+    },
+    "labml_nn\\transformers\\feed_forward.py": {
+      "functions": [
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "FeedForward"
+      ]
+    },
+    "labml_nn\\transformers\\label_smoothing_loss.py": {
+      "functions": [
+        "_test_label_smoothing",
+        "__init__",
+        "forward",
+        "loss_sample"
+      ],
+      "classes": [
+        "LabelSmoothingLoss"
+      ]
+    },
+    "labml_nn\\transformers\\mha.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "get_scores",
+        "prepare_mask",
+        "forward"
+      ],
+      "classes": [
+        "PrepareForMultiHeadAttention",
+        "MultiHeadAttention"
+      ]
+    },
+    "labml_nn\\transformers\\models.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "encode",
+        "decode"
+      ],
+      "classes": [
+        "EmbeddingsWithPositionalEncoding",
+        "EmbeddingsWithLearnedPositionalEncoding",
+        "TransformerLayer",
+        "Encoder",
+        "Decoder",
+        "Generator",
+        "EncoderDecoder"
+      ]
+    },
+    "labml_nn\\transformers\\positional_encoding.py": {
+      "functions": [
+        "get_positional_encoding",
+        "_test_positional_encoding",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "PositionalEncoding"
+      ]
+    },
+    "labml_nn\\transformers\\relative_mha.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\transformers\\utils.py": {
+      "functions": [
+        "subsequent_mask",
+        "_subsequent_mask"
+      ],
+      "classes": []
+    },
+    "labml_nn\\transformers\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\transformers\\aft\\experiment.py": {
+      "functions": [
+        "_transformer_configs",
+        "_model",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "AutoregressiveTransformer",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\aft\\__init__.py": {
+      "functions": [
+        "_test_local_mask",
+        "__init__",
+        "create_local_mask",
+        "forward"
+      ],
+      "classes": [
+        "AFTLocal"
+      ]
+    },
+    "labml_nn\\transformers\\alibi\\experiment.py": {
+      "functions": [
+        "_alibi_mha",
+        "shuffled_longer_valid_loader",
+        "_transformer_configs",
+        "main",
+        "other_metrics"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\alibi\\__init__.py": {
+      "functions": [
+        "get_slopes",
+        "get_alibi_biases",
+        "_test_alibi",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "AlibiMultiHeadAttention"
+      ]
+    },
+    "labml_nn\\transformers\\basic\\autoregressive_experiment.py": {
+      "functions": [
+        "_transformer_configs",
+        "_model",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "AutoregressiveTransformer",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\basic\\with_sophia.py": {
+      "functions": [
+        "main",
+        "step"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\basic\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\transformers\\compressive\\experiment.py": {
+      "functions": [
+        "autoregressive_model",
+        "attention_reconstruction_loss",
+        "main",
+        "__init__",
+        "forward",
+        "init",
+        "merge_compress_memory",
+        "step",
+        "sample"
+      ],
+      "classes": [
+        "CompressedMemory",
+        "AutoregressiveModel",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\compressive\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "concat_memory",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "prepare_for_attn",
+        "attn",
+        "norm",
+        "calc_loss",
+        "__call__"
+      ],
+      "classes": [
+        "Conv1dCompression",
+        "CompressiveTransformerLayer",
+        "CompressiveTransformer",
+        "AttentionReconstructionLoss"
+      ]
+    },
+    "labml_nn\\transformers\\fast_weights\\experiment.py": {
+      "functions": [
+        "fast_weights_transformer",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "AutoregressiveModel",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\fast_weights\\token_wise.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "FastWeightsAttention",
+        "FastWeightsAttentionTransformerLayer",
+        "FastWeightsAttentionTransformer"
+      ]
+    },
+    "labml_nn\\transformers\\fast_weights\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "dpfp",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "DPFP",
+        "FastWeightsAttention",
+        "FastWeightsAttentionTransformerLayer",
+        "FastWeightsAttentionTransformer"
+      ]
+    },
+    "labml_nn\\transformers\\feedback\\experiment.py": {
+      "functions": [
+        "feedback_transformer",
+        "feedback_transformer_kv",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "AutoregressiveModel",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\feedback\\__init__.py": {
+      "functions": [
+        "__init__",
+        "get_scores",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "forward",
+        "backward",
+        "__init__",
+        "append",
+        "get",
+        "free",
+        "__init__",
+        "forward",
+        "free"
+      ],
+      "classes": [
+        "FeedbackAttention",
+        "FeedbackTransformerLayer",
+        "FeedbackTransformer",
+        "StackFunction",
+        "Stack",
+        "FeedbackTransformerKV"
+      ]
+    },
+    "labml_nn\\transformers\\flash\\test.py": {
+      "functions": [
+        "_calc_abs_rel_error",
+        "test_fwd_bwd",
+        "_perf_triton_fn",
+        "_perf_flash",
+        "measure_performance",
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\transformers\\flash\\__init__.py": {
+      "functions": [
+        "_get_autotune_configs",
+        "_attn_fwd",
+        "_attn_fwd_inner",
+        "_attn_bwd_d",
+        "_attn_bwd_dkdv",
+        "_attn_bwd_dkdv_inner",
+        "_attn_bwd_dq",
+        "_attn_bwd_dq_inner",
+        "forward",
+        "backward"
+      ],
+      "classes": [
+        "AttentionFunc"
+      ]
+    },
+    "labml_nn\\transformers\\fnet\\experiment.py": {
+      "functions": [
+        "_transformer_configs",
+        "fnet_mix",
+        "_model",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "TransformerClassifier",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\fnet\\__init__.py": {
+      "functions": [
+        "forward"
+      ],
+      "classes": [
+        "FNetMix"
+      ]
+    },
+    "labml_nn\\transformers\\glu_variants\\experiment.py": {
+      "functions": [
+        "autoregressive_model",
+        "transformer_c",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "AutoregressiveModel",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\glu_variants\\simple.py": {
+      "functions": [
+        "main",
+        "__init__",
+        "forward",
+        "__init__",
+        "text_to_i",
+        "__len__",
+        "__getitem__",
+        "__init__",
+        "sample",
+        "train"
+      ],
+      "classes": [
+        "AutoregressiveModel",
+        "Configs",
+        "TinyShakespeareDataset",
+        "Trainer"
+      ]
+    },
+    "labml_nn\\transformers\\glu_variants\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\transformers\\gmlp\\experiment.py": {
+      "functions": [
+        "_gmlp_configs",
+        "_transformer_configs",
+        "main"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\gmlp\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "GMLPBlock",
+        "SpacialGatingUnit"
+      ]
+    },
+    "labml_nn\\transformers\\gpt\\__init__.py": {
+      "functions": [
+        "_transformer_configs",
+        "_init_weights",
+        "_model",
+        "transformer_optimizer",
+        "main",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "GPT",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\hour_glass\\experiment.py": {
+      "functions": [
+        "_model",
+        "main",
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "AutoregressiveTransformer",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\hour_glass\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__"
+      ],
+      "classes": [
+        "HourGlass",
+        "ShiftRight",
+        "AvgPoolShortening",
+        "NaiveUpSampling",
+        "AutoregressiveMask",
+        "LinearPoolingShortening",
+        "AttentionBasedShortening",
+        "LinearUpSampling",
+        "AttentionBasedUpSampling"
+      ]
+    },
+    "labml_nn\\transformers\\jax_transformer\\__init__.py": {
+      "functions": [
+        "main",
+        "__init__",
+        "__getattr__",
+        "__setattr__",
+        "_clear_params",
+        "get_params",
+        "_set_params",
+        "_set_param",
+        "purify",
+        "__init__",
+        "__getitem__",
+        "__setitem__",
+        "__len__",
+        "__getattr__",
+        "__setattr__",
+        "_clear_params",
+        "get_params",
+        "_set_param",
+        "__init__",
+        "__call__",
+        "__init__",
+        "__call__",
+        "__init__",
+        "__call__",
+        "__init__",
+        "__call__",
+        "__init__",
+        "__call__",
+        "__init__",
+        "__call__",
+        "__init__",
+        "__call__",
+        "__init__",
+        "_loss",
+        "__call__",
+        "__init__",
+        "__call__",
+        "get_loss",
+        "sample",
+        "__init__",
+        "_init_state",
+        "step",
+        "_step",
+        "_update_state",
+        "__init__",
+        "__iter__",
+        "__len__",
+        "__next__",
+        "get_loss",
+        "pure_method"
+      ],
+      "classes": [
+        "Module",
+        "ModuleList",
+        "Embedding",
+        "EmbeddingsWithLearnedPositionalEncoding",
+        "Linear",
+        "LayerNorm",
+        "MultiHeadAttention",
+        "FeedForward",
+        "TransformerLayer",
+        "CrossEntropyLoss",
+        "AutoregressiveTransformer",
+        "AdamState",
+        "Adam",
+        "TinyShakespeare"
+      ]
+    },
+    "labml_nn\\transformers\\knn\\build_index.py": {
+      "functions": [
+        "load_experiment",
+        "gather_keys",
+        "build_index",
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\transformers\\knn\\eval_knn.py": {
+      "functions": [
+        "knn",
+        "validation_loss",
+        "load_index",
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\transformers\\knn\\train_model.py": {
+      "functions": [
+        "autoregressive_model",
+        "transformer_c",
+        "main",
+        "__init__",
+        "ff_input",
+        "forward"
+      ],
+      "classes": [
+        "AutoregressiveModel",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\knn\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\transformers\\mlm\\experiment.py": {
+      "functions": [
+        "n_tokens_mlm",
+        "_transformer_configs",
+        "_model",
+        "main",
+        "__init__",
+        "forward",
+        "init",
+        "step",
+        "sample"
+      ],
+      "classes": [
+        "TransformerMLM",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\mlm\\__init__.py": {
+      "functions": [
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "MLM"
+      ]
+    },
+    "labml_nn\\transformers\\mlp_mixer\\experiment.py": {
+      "functions": [
+        "_mix_mlp_configs",
+        "_transformer_configs",
+        "main"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\mlp_mixer\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "MLPMixer"
+      ]
+    },
+    "labml_nn\\transformers\\primer_ez\\efficient.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__"
+      ],
+      "classes": [
+        "SpatialDepthWiseConvolution",
+        "MultiDConvHeadAttention"
+      ]
+    },
+    "labml_nn\\transformers\\primer_ez\\experiment.py": {
+      "functions": [
+        "_squared_relu",
+        "_d_conv_mha",
+        "_d_shared_conv_mha",
+        "_d_per_head_conv_mha",
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\transformers\\primer_ez\\variations.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "__init__",
+        "forward",
+        "__init__"
+      ],
+      "classes": [
+        "SpatialDepthWiseSharedConvolution",
+        "MultiDSharedConvHeadAttention",
+        "SpatialDepthWisePerHeadConvolution",
+        "MultiDPHConvHeadAttention"
+      ]
+    },
+    "labml_nn\\transformers\\primer_ez\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__"
+      ],
+      "classes": [
+        "SquaredReLU",
+        "SpatialDepthWiseConvolution",
+        "MultiDConvHeadAttention"
+      ]
+    },
+    "labml_nn\\transformers\\retro\\bert_embeddings.py": {
+      "functions": [
+        "_test",
+        "__init__",
+        "_trim_chunk",
+        "__call__"
+      ],
+      "classes": [
+        "BERTChunkEmbeddings"
+      ]
+    },
+    "labml_nn\\transformers\\retro\\database.py": {
+      "functions": [
+        "build_database",
+        "__init__",
+        "filter_neighbors",
+        "__call__"
+      ],
+      "classes": [
+        "RetroIndex"
+      ]
+    },
+    "labml_nn\\transformers\\retro\\dataset.py": {
+      "functions": [
+        "build_dataset",
+        "__init__",
+        "__len__",
+        "__getitem__"
+      ],
+      "classes": [
+        "Dataset"
+      ]
+    },
+    "labml_nn\\transformers\\retro\\model.py": {
+      "functions": [
+        "_test",
+        "__init__",
+        "forward",
+        "__init__",
+        "mask_attention",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "RotaryPositionalEmbeddings",
+        "SelfAttention",
+        "CrossAttention",
+        "ChunkedCrossAttention",
+        "FeedForward",
+        "NearestNeighborEncoder",
+        "RetroModel"
+      ]
+    },
+    "labml_nn\\transformers\\retro\\train.py": {
+      "functions": [
+        "train",
+        "__init__",
+        "retrieve_nearest_neighbours",
+        "sample",
+        "__init__",
+        "__call__"
+      ],
+      "classes": [
+        "Sampler",
+        "Trainer"
+      ]
+    },
+    "labml_nn\\transformers\\retro\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\transformers\\rope\\experiment.py": {
+      "functions": [
+        "_rotary_pe_mha",
+        "_model",
+        "main"
+      ],
+      "classes": []
+    },
+    "labml_nn\\transformers\\rope\\__init__.py": {
+      "functions": [
+        "_test_rotary",
+        "__init__",
+        "_build_cache",
+        "_neg_half",
+        "forward",
+        "__init__",
+        "get_scores"
+      ],
+      "classes": [
+        "RotaryPositionalEmbeddings",
+        "RotaryPEMultiHeadAttention"
+      ]
+    },
+    "labml_nn\\transformers\\rope\\value_pe\\arithmetic_experiment.py": {
+      "functions": [
+        "_rotary_value_pe_mha",
+        "main"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\rope\\value_pe\\experiment.py": {
+      "functions": [
+        "_rotary_value_pe_mha",
+        "main"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\rope\\value_pe\\__init__.py": {
+      "functions": [
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "ReverseRotaryPositionalEmbeddings",
+        "RotaryValuePEMultiHeadAttention"
+      ]
+    },
+    "labml_nn\\transformers\\switch\\experiment.py": {
+      "functions": [
+        "autoregressive_model",
+        "switch_transformer",
+        "main",
+        "__init__",
+        "forward",
+        "init",
+        "step"
+      ],
+      "classes": [
+        "AutoregressiveModel",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\switch\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "SwitchFeedForward",
+        "SwitchTransformerLayer",
+        "SwitchTransformer"
+      ]
+    },
+    "labml_nn\\transformers\\vit\\experiment.py": {
+      "functions": [
+        "_transformer",
+        "_vit",
+        "main"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\vit\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "PatchEmbeddings",
+        "LearnedPositionalEmbeddings",
+        "ClassificationHead",
+        "VisionTransformer"
+      ]
+    },
+    "labml_nn\\transformers\\xl\\experiment.py": {
+      "functions": [
+        "autoregressive_model",
+        "main",
+        "__init__",
+        "forward",
+        "init",
+        "merge_memory",
+        "step",
+        "sample"
+      ],
+      "classes": [
+        "AutoregressiveModel",
+        "Configs"
+      ]
+    },
+    "labml_nn\\transformers\\xl\\relative_mha.py": {
+      "functions": [
+        "shift_right",
+        "_test_shift_right",
+        "__init__",
+        "get_scores"
+      ],
+      "classes": [
+        "RelativeMultiHeadAttention"
+      ]
+    },
+    "labml_nn\\transformers\\xl\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "TransformerXLLayer",
+        "TransformerXL"
+      ]
+    },
+    "labml_nn\\uncertainty\\__init__.py": {
+      "functions": [],
+      "classes": []
+    },
+    "labml_nn\\uncertainty\\evidence\\experiment.py": {
+      "functions": [
+        "mnist_model",
+        "kl_div_coef",
+        "main",
+        "__init__",
+        "__call__",
+        "init",
+        "step"
+      ],
+      "classes": [
+        "Model",
+        "Configs"
+      ]
+    },
+    "labml_nn\\uncertainty\\evidence\\__init__.py": {
+      "functions": [
+        "forward",
+        "forward",
+        "forward",
+        "forward",
+        "forward"
+      ],
+      "classes": [
+        "MaximumLikelihoodLoss",
+        "CrossEntropyBayesRisk",
+        "SquaredErrorBayesRisk",
+        "KLDivergenceLoss",
+        "TrackStatistics"
+      ]
+    },
+    "labml_nn\\unet\\carvana.py": {
+      "functions": [
+        "__init__",
+        "__getitem__",
+        "__len__"
+      ],
+      "classes": [
+        "CarvanaDataset"
+      ]
+    },
+    "labml_nn\\unet\\experiment.py": {
+      "functions": [
+        "main",
+        "init",
+        "sample",
+        "train",
+        "run"
+      ],
+      "classes": [
+        "Configs"
+      ]
+    },
+    "labml_nn\\unet\\__init__.py": {
+      "functions": [
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "forward",
+        "__init__",
+        "forward"
+      ],
+      "classes": [
+        "DoubleConvolution",
+        "DownSample",
+        "UpSample",
+        "CropAndConcat",
+        "UNet"
+      ]
+    },
+    "labml_nn\\utils\\tokenizer.py": {
+      "functions": [
+        "basic_english",
+        "character_tokenizer",
+        "character",
+        "__init__"
+      ],
+      "classes": [
+        "TokenizerConfigs"
+      ]
+    },
+    "labml_nn\\utils\\__init__.py": {
+      "functions": [
+        "clone_module_list",
+        "cycle_dataloader",
+        "__init__",
+        "__getitem__",
+        "__iter__",
+        "__len__"
+      ],
+      "classes": [
+        "MapStyleDataset"
+      ]
+    },
+    "utils\\diagrams.py": {
+      "functions": [
+        "clear_switches",
+        "add_class",
+        "add_bg_classes",
+        "add_stroke_classes",
+        "add_fill_classes",
+        "add_classes",
+        "parse",
+        "recurse",
+        "main"
+      ],
+      "classes": []
+    },
+    "utils\\papers_list.py": {
+      "functions": [
+        "collect",
+        "main"
+      ],
+      "classes": []
+    },
+    "utils\\sitemap.py": {
+      "functions": [
+        "collect",
+        "main"
+      ],
+      "classes": []
+    },
+    "utils\\__init__.py": {
+      "functions": [],
+      "classes": []
+    }
+  },
+  "awesome-ai-research-papers": {
+    "check_readme_links.py": {
+      "functions": [
+        "check_links"
+      ],
+      "classes": []
+    }
+  },
+  "ML-Papers-Explained": {}
+}

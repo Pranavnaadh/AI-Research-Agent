@@ -1,0 +1,5 @@
+https://github.com/labmlai/annotated_deep_learning_paper_implementations
+https://github.com/SakanaAI/AI-Scientist-v2
+https://github.com/dair-ai/ML-Papers-Explained
+https://github.com/awesomelistsio/awesome-ai-research-papers
+https://github.com/ashishpatel26/500-AI-Agents-Projects
